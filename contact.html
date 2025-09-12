@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVESTAS INTERNATIONAL - Contact</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f5f5f5;
+        color: #222;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 16px 40px;
+      }
+
+      .accordion {
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: #fff;
+      }
+
+      .accordion-item {
+        border-bottom: 1px solid #ccc;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+
+      .accordion-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 15px;
+        background: #e9f5f0;
+        cursor: pointer;
+        font-weight: bold;
+        color: #064d2e;
+        font-size: 16px;
+      }
+
+      .accordion-header span.symbol {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+
+      .accordion-header span.symbol.signup {
+        color: blue;
+      }
+      .accordion-header span.symbol.message {
+        color: orange;
+      }
+      .accordion-header span.symbol.member {
+        color: #064d2e;
+      }
+
+      .accordion-header span.toggle {
+        margin-left: auto;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .accordion-content {
+        display: none;
+        padding: 15px;
+        background: #ffffff;
+        transition: all 0.3s ease;
+      }
+
+      .accordion-content input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+
+      .accordion-content button {
+        padding: 10px 20px;
+        background: #064d2e;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .accordion-content button:hover {
+        background: #0a6d46;
+      }
+
+      @media (max-width: 600px) {
+        .accordion-header {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Adresse email au-dessus des sections -->
+      <div style="text-align: center; margin: 20px 0">
+        <p style="color: blue; font-weight: bold; font-size: 16px">
+          Contact : egied2024@gmail.com
+        </p>
+      </div>
+
+      <div class="accordion">
+        <!-- S'inscrire -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="symbol signup">📝</span> S'INSCRIRE
+            <span class="toggle">+</span>
+          </div>
+          <div class="accordion-content">
+            <input type="text" placeholder="Genre : Mr/Mme" />
+            <input type="text" placeholder="Nom" />
+            <input type="text" placeholder="Prénoms" />
+            <input type="text" placeholder="Numéro WhatsApp/Telegram" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Pays" />
+            <input type="text" placeholder="Ville/Région" />
+            <input type="text" placeholder="Profession/Titre/Activités" />
+            <button>Envoyer</button>
+          </div>
+        </div>
+
+        <!-- Envoyer un message -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="symbol message">✉️</span> ENVOYER UN MESSAGE
+            <span class="toggle">+</span>
+          </div>
+          <div class="accordion-content">
+            <input type="text" placeholder="Nom" />
+            <input type="text" placeholder="Prénoms" />
+            <input type="text" placeholder="Numéro WhatsApp/Telegram" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Pays" />
+            <input type="text" placeholder="Ville/Région" />
+            <button>Envoyer</button>
+          </div>
+        </div>
+
+        <!-- Membre Investas -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="symbol member">👥</span> MEMBRE INVESTAS CASH TRADING
+            <span class="toggle">+</span>
+          </div>
+          <div class="accordion-content">
+            <input type="text" placeholder="Nom" />
+            <input type="text" placeholder="Prénoms" />
+            <input type="text" placeholder="Numéro WhatsApp/Telegram" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Pays" />
+            <input type="text" placeholder="Ville/Région" />
+            <input type="text" placeholder="Numéro de contrat / Code" />
+            <button>Envoyer</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document.querySelectorAll(".accordion-header").forEach((header) => {
+        header.addEventListener("click", () => {
+          const item = header.parentElement;
+          const content = item.querySelector(".accordion-content");
+          const toggle = header.querySelector(".toggle");
+          const isOpen = content.style.display === "block";
+
+          document
+            .querySelectorAll(".accordion-content")
+            .forEach((c) => (c.style.display = "none"));
+          document
+            .querySelectorAll(".toggle")
+            .forEach((t) => (t.textContent = "+"));
+
+          if (!isOpen) {
+            content.style.display = "block";
+            toggle.textContent = "−";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

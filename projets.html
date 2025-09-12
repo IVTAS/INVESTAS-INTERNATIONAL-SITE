@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVESTAS - PROJETS</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #000;
+      }
+
+      /* Sections style Savoir */
+      .section-card {
+        width: 90%;
+        max-width: 1000px;
+        margin: 15px auto;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .accordion-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 18px;
+        background: #e9f5f0;
+        cursor: pointer;
+        font-weight: bold;
+        color: #064d2e;
+        font-size: 18px;
+        text-transform: uppercase;
+        border-radius: 12px 12px 0 0;
+      }
+
+      .accordion-header .symbol {
+        margin-right: 10px;
+        font-size: 20px;
+      }
+
+      .accordion-header .toggle {
+        margin-left: auto;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .accordion-content {
+        display: none;
+        padding: 18px;
+        background: #ffffff;
+        font-size: 16px;
+        line-height: 1.6;
+        transition: all 0.3s ease;
+        border-radius: 0 0 12px 12px;
+      }
+
+      .accordion-content ul,
+      .accordion-content ol {
+        padding-left: 20px;
+        margin-bottom: 12px;
+      }
+
+      .accordion-content li {
+        margin-bottom: 10px;
+      }
+
+      .accordion-content p {
+        margin-bottom: 10px;
+      }
+
+      /* Tableau Projets Réalisés 2 colonnes */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 15px;
+      }
+      table th,
+      table td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+        font-size: 16px;
+      }
+      table th {
+        background-color: #e9f5f0;
+        color: #064d2e;
+        text-transform: uppercase;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .accordion-header {
+          font-size: 16px;
+          padding: 14px;
+        }
+        .accordion-content {
+          font-size: 15px;
+          padding: 14px;
+        }
+        table th,
+        table td {
+          font-size: 14px;
+          padding: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-card">
+      <div class="accordion-header">
+        <span class="symbol">📝</span> PROJETS RÉALISÉS
+        <span class="toggle">+</span>
+      </div>
+      <div class="accordion-content">
+        <p>
+          Le financement et la réalisation des projets sont essentiellement
+          prévus à la phase économique. Néanmoins nous avons reçu plusieurs
+          projets pour demande de financement via notre plateforme dans des
+          domaines diversifiés.
+        </p>
+
+        <!-- Tableau 1 -->
+        <table>
+          <thead>
+            <tr>
+              <th>Production & Industrie</th>
+              <th>Services & Divers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jus et gâteaux</td>
+              <td>Événementiels (A venir)</td>
+            </tr>
+            <tr>
+              <td>Énergie solaire</td>
+              <td>Conférences (A venir)</td>
+            </tr>
+            <tr>
+              <td>Informatique</td>
+              <td>Actions Sociales (A venir)</td>
+            </tr>
+            <tr>
+              <td>Agriculture</td>
+              <td>Sponsorings (A venir)</td>
+            </tr>
+            <tr>
+              <td>Élevages (volailles et pisciculture)</td>
+              <td>Salons de Coiffure</td>
+            </tr>
+            <tr>
+              <td>Commerce Achat Vente</td>
+              <td>Poissonnerie</td>
+            </tr>
+            <tr>
+              <td>Agro-alimentaire</td>
+              <td>Audio visuel</td>
+            </tr>
+            <tr>
+              <td>Tourisme</td>
+              <td>Cosmétique et Coiffure</td>
+            </tr>
+            <tr>
+              <td>Transport</td>
+              <td>Éducation</td>
+            </tr>
+            <tr>
+              <td>Distribution de Gaz</td>
+              <td>Construction</td>
+            </tr>
+            <tr>
+              <td>Hôtel</td>
+              <td>Unité de transformation</td>
+            </tr>
+            <tr>
+              <td>Dragues de sable</td>
+              <td>Usine de bois</td>
+            </tr>
+            <tr>
+              <td>Carrières</td>
+              <td>Eau minérale</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Vous pouvez nous envoyer vos projets et dossiers complets sur notre
+          plateforme INVESTAS CASH TRADING. Nous pouvons aussi faire le montage
+          de vos projets.
+        </p>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="accordion-header">
+        <span class="symbol">🎯</span> ÉVÉNEMENTS
+        <span class="toggle">+</span>
+      </div>
+      <div class="accordion-content">
+        <ul>
+          <li>Événementiels (A venir)</li>
+          <li>Conférences (A venir)</li>
+          <li>Actions Sociales (A venir)</li>
+          <li>Sponsorings (A venir)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="accordion-header">
+        <span class="symbol">🤝</span> PARTENARIATS
+        <span class="toggle">+</span>
+      </div>
+      <div class="accordion-content">
+        <p>
+          INVESTAS International est ouvert à toutes négociations qui
+          permettront à notre cryptomonnaie de s'implanter dans chaque pays pour
+          le développement des régions et le bien-être des citoyens.
+        </p>
+        <p>Vous pouvez nous contacter :</p>
+        <ul>
+          <li>
+            Email : <a href="mailto:egied2024@gmail.com">egied2024@gmail.com</a>
+          </li>
+          <li>WhatsApp : 00225.05.95.57.71.41</li>
+          <li>Telegram : 00225.07.69.78.01.11</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="accordion-header">
+        <span class="symbol">💻</span> CRÉATION DE COMPTE INVESTAS
+        <span class="toggle">+</span>
+      </div>
+      <div class="accordion-content">
+        <p>
+          Nous vous invitons à vous inscrire pour suivre nos formations
+          complètes en cryptomonnaies et gérer vos fonds en toute sécurité.
+        </p>
+        <p>
+          Une chose est de gagner de l'argent en cryptomonnaie mais une autre,
+          la plus importante, est de maîtriser l'utilisation de la cryptomonnaie
+          pour être indépendant dans la gestion de vos fonds et conserver vos
+          données confidentielles.
+        </p>
+
+        <h4>Étape 1 : Ouverture du compte numérique</h4>
+        <p>
+          La création d'un compte peut se faire à distance. Nous vous donnons
+          ici juste les informations primaires pour vous guider. Pour la suite,
+          veuillez nous contacter.
+        </p>
+        <ul>
+          <li>Avoir une connexion internet fonctionnelle</li>
+          <li>Avoir un calepin ou cahier et un stylo</li>
+          <li>
+            Si possible, un autre téléphone pour faire la photo du code composé
+            de 12 mots fournis par Metamask
+          </li>
+          <li>Télécharger l'application METAMASK</li>
+        </ul>
+
+        <h4>Démarrage</h4>
+        <ol>
+          <li>Lancer l'application METAMASK</li>
+          <li>Entrer votre mot de passe et le noter dans un lieu sûr</li>
+          <li>Cliquez sur Déverrouiller</li>
+          <li>Sélectionner Créer Nouveau Compte</li>
+          <li>Valider le document en lisant et acceptant</li>
+          <li>Entrer à nouveau le mot de passe et confirmer</li>
+          <li>
+            Noter les 12 mots secrets dans l'ordre dans votre calepin ou faire
+            une capture d'écran
+          </li>
+          <li>Valider et suivre les instructions pour ressaisir les 12 mots</li>
+          <li>Vous arrivez dans votre portefeuille METAMASK</li>
+          <li>Changer la blockchain par BNB CHAIN</li>
+          <li>Importer le jeton BNB pour les frais de gaz</li>
+          <li>Copier et importer le smart contract IVTAS</li>
+          <li>Copier l'adresse de votre compte pour les transactions</li>
+        </ol>
+        <p>
+          Important : conservez vos informations confidentielles et apprenez à
+          gérer vos transactions en toute sécurité.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const headers = document.querySelectorAll(".accordion-header");
+      headers.forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          const toggle = header.querySelector(".toggle");
+          if (content.style.display === "block") {
+            content.style.display = "none";
+            toggle.textContent = "+";
+          } else {
+            document
+              .querySelectorAll(".accordion-content")
+              .forEach((c) => (c.style.display = "none"));
+            document
+              .querySelectorAll(".toggle")
+              .forEach((t) => (t.textContent = "+"));
+            content.style.display = "block";
+            toggle.textContent = "−";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
