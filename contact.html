@@ -101,6 +101,14 @@
           font-size: 14px;
         }
       }
+
+      /* Message de confirmation */
+      .thankyou-message {
+        display: none;
+        color: green;
+        font-weight: bold;
+        margin-top: 10px;
+      }
     </style>
   </head>
   <body>
@@ -120,15 +128,38 @@
             <span class="toggle">+</span>
           </div>
           <div class="accordion-content">
-            <input type="text" placeholder="Genre : Mr/Mme" />
-            <input type="text" placeholder="Nom" />
-            <input type="text" placeholder="Prénoms" />
-            <input type="text" placeholder="Numéro WhatsApp/Telegram" />
-            <input type="email" placeholder="Email" />
-            <input type="text" placeholder="Pays" />
-            <input type="text" placeholder="Ville/Région" />
-            <input type="text" placeholder="Profession/Titre/Activités" />
-            <button>Envoyer</button>
+            <form action="https://formspree.io/f/xldwvbdv" method="POST">
+              <input
+                type="text"
+                name="genre"
+                placeholder="Genre : Mr/Mme"
+                required
+              />
+              <input type="text" name="nom" placeholder="Nom" required />
+              <input
+                type="text"
+                name="prenoms"
+                placeholder="Prénoms"
+                required
+              />
+              <input
+                type="text"
+                name="whatsapp"
+                placeholder="Numéro WhatsApp/Telegram"
+              />
+              <input type="email" name="email" placeholder="Email" required />
+              <input type="text" name="pays" placeholder="Pays" />
+              <input type="text" name="ville" placeholder="Ville/Région" />
+              <input
+                type="text"
+                name="profession"
+                placeholder="Profession/Titre/Activités"
+              />
+              <button type="submit">Envoyer</button>
+              <p class="thankyou-message">
+                Merci ! Votre formulaire a été envoyé.
+              </p>
+            </form>
           </div>
         </div>
 
@@ -139,13 +170,27 @@
             <span class="toggle">+</span>
           </div>
           <div class="accordion-content">
-            <input type="text" placeholder="Nom" />
-            <input type="text" placeholder="Prénoms" />
-            <input type="text" placeholder="Numéro WhatsApp/Telegram" />
-            <input type="email" placeholder="Email" />
-            <input type="text" placeholder="Pays" />
-            <input type="text" placeholder="Ville/Région" />
-            <button>Envoyer</button>
+            <form action="https://formspree.io/f/xldwvbdv" method="POST">
+              <input type="text" name="nom" placeholder="Nom" required />
+              <input
+                type="text"
+                name="prenoms"
+                placeholder="Prénoms"
+                required
+              />
+              <input
+                type="text"
+                name="whatsapp"
+                placeholder="Numéro WhatsApp/Telegram"
+              />
+              <input type="email" name="email" placeholder="Email" required />
+              <input type="text" name="pays" placeholder="Pays" />
+              <input type="text" name="ville" placeholder="Ville/Région" />
+              <button type="submit">Envoyer</button>
+              <p class="thankyou-message">
+                Merci ! Votre formulaire a été envoyé.
+              </p>
+            </form>
           </div>
         </div>
 
@@ -156,14 +201,32 @@
             <span class="toggle">+</span>
           </div>
           <div class="accordion-content">
-            <input type="text" placeholder="Nom" />
-            <input type="text" placeholder="Prénoms" />
-            <input type="text" placeholder="Numéro WhatsApp/Telegram" />
-            <input type="email" placeholder="Email" />
-            <input type="text" placeholder="Pays" />
-            <input type="text" placeholder="Ville/Région" />
-            <input type="text" placeholder="Numéro de contrat / Code" />
-            <button>Envoyer</button>
+            <form action="https://formspree.io/f/xldwvbdv" method="POST">
+              <input type="text" name="nom" placeholder="Nom" required />
+              <input
+                type="text"
+                name="prenoms"
+                placeholder="Prénoms"
+                required
+              />
+              <input
+                type="text"
+                name="whatsapp"
+                placeholder="Numéro WhatsApp/Telegram"
+              />
+              <input type="email" name="email" placeholder="Email" required />
+              <input type="text" name="pays" placeholder="Pays" />
+              <input type="text" name="ville" placeholder="Ville/Région" />
+              <input
+                type="text"
+                name="contrat"
+                placeholder="Numéro de contrat / Code"
+              />
+              <button type="submit">Envoyer</button>
+              <p class="thankyou-message">
+                Merci ! Votre formulaire a été envoyé.
+              </p>
+            </form>
           </div>
         </div>
       </div>
@@ -188,6 +251,30 @@
             content.style.display = "block";
             toggle.textContent = "−";
           }
+        });
+      });
+
+      // Affichage message de confirmation après l'envoi
+      document.querySelectorAll("form").forEach((form) => {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const formData = new FormData(this);
+          fetch(this.action, {
+            method: "POST",
+            body: formData,
+            headers: { Accept: "application/json" },
+          })
+            .then((response) => {
+              if (response.ok) {
+                this.querySelector(".thankyou-message").style.display = "block";
+                this.reset();
+              } else {
+                alert("Oups ! Une erreur est survenue.");
+              }
+            })
+            .catch((error) => {
+              alert("Erreur réseau, veuillez réessayer.");
+            });
         });
       });
     </script>
