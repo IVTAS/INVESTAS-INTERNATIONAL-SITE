@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVESTAS INTERNATIONAL</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+      }
+
+      /* En-tête */
+      header {
+        background: linear-gradient(135deg, #064d2e, #b8860b);
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo-title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo-title img {
+        height: 60px;
+        width: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .logo-title img:hover {
+        transform: rotate(-3deg) scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      .logo-title h1 {
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: 2px;
+      }
+
+      .logo-title h2 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: normal;
+        color: gold;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      nav a {
+        display: inline-block;
+        padding: 8px 16px;
+        background: white;
+        color: #064d2e;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        text-align: center;
+      }
+
+      nav a:hover {
+        background: #f0f0f0;
+      }
+
+      nav a.active {
+        background: gold;
+        color: #064d2e;
+      }
+
+      /* Zone principale */
+      main {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        min-height: 400px;
+      }
+
+      /* Pied de page */
+      footer {
+        background: linear-gradient(135deg, #064d2e, #b8860b);
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .logo-title h1 {
+          font-size: 20px;
+        }
+        .logo-title h2 {
+          font-size: 12px;
+        }
+        nav a {
+          padding: 6px 12px;
+          font-size: 14px;
+        }
+        .logo-title img {
+          height: 50px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
+        nav {
+          justify-content: center;
+          margin-top: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo-title h1 {
+          font-size: 18px;
+        }
+        .logo-title h2 {
+          font-size: 10px;
+        }
+        nav a {
+          padding: 5px 10px;
+          font-size: 12px;
+        }
+        .logo-title img {
+          height: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- En-tête -->
+    <header>
+      <div class="logo-title">
+        <img src="2025-INVESTAS.jpg" alt="Logo Investas" />
+        <div>
+          <h1>INVESTAS INTERNATIONAL</h1>
+          <h2>International Investment Association</h2>
+        </div>
+      </div>
+      <nav>
+        <a href="#" onclick="loadPage('accueil.html', this)">Accueil</a>
+        <a href="#" onclick="loadPage('savoir.html', this)">Savoir</a>
+        <a href="#" onclick="loadPage('avantages.html', this)">Avantages</a>
+        <a href="#" onclick="loadPage('nouveau.html', this)">Nouveau</a>
+        <a href="#" onclick="loadPage('services.html', this)">Services</a>
+        <a href="#" onclick="loadPage('infos.html', this)">Infos</a>
+        <a href="#" onclick="loadPage('projets.html', this)">Projets</a>
+        <a href="#" onclick="loadPage('contact.html', this)">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Contenu dynamique -->
+    <main id="content">
+      <h2>Bienvenue sur INVESTAS</h2>
+      <p>Chargement en cours...</p>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+      <p>&copy; 2025 INVESTAS INTERNATIONAL - Tous droits réservés.</p>
+      <p>Contact : <span style="color: gold">egied2024@gmail.com</span></p>
+    </footer>
+
+    <script>
+      async function loadPage(page, link = null) {
+        try {
+          const response = await fetch(page);
+          if (!response.ok) throw new Error("Page non trouvée");
+          const html = await response.text();
+          document.getElementById("content").innerHTML = html;
+
+          document
+            .querySelectorAll("nav a")
+            .forEach((a) => a.classList.remove("active"));
+          if (link) link.classList.add("active");
+
+          initAccordeons();
+        } catch (error) {
+          document.getElementById("content").innerHTML =
+            "<p>Erreur : " + error.message + "</p>";
+        }
+      }
+
+      function initAccordeons() {
+        const headers = document.querySelectorAll(".accordion-header");
+        headers.forEach((header) => {
+          header.addEventListener("click", () => {
+            const item = header.parentElement;
+            const content = item.querySelector(".accordion-content");
+            const toggle = header.querySelector(".toggle");
+
+            if (content.style.display === "block") {
+              content.style.display = "none";
+              toggle.textContent = "+";
+            } else {
+              document
+                .querySelectorAll(".accordion-content")
+                .forEach((c) => (c.style.display = "none"));
+              document
+                .querySelectorAll(".toggle")
+                .forEach((t) => (t.textContent = "+"));
+              content.style.display = "block";
+              toggle.textContent = "−";
+            }
+          });
+        });
+      }
+
+      loadPage("accueil.html", document.querySelector("nav a"));
+    </script>
+  </body>
+</html>
