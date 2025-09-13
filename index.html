@@ -90,9 +90,15 @@
         margin: 20px auto;
         background: white;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         padding: 20px;
         min-height: 400px;
+      }
+
+      @media (min-width: 1200px) {
+        main {
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
       }
 
       /* Pied de page */
@@ -168,6 +174,8 @@
         <a href="#" onclick="loadPage('infos.html', this)">Infos</a>
         <a href="#" onclick="loadPage('projets.html', this)">Projets</a>
         <a href="#" onclick="loadPage('contact.html', this)">Contact</a>
+        <a href="#" onclick="loadPage('whitepaper.html', this)">White Paper</a>
+        <!-- nouvel onglet -->
       </nav>
     </header>
 
