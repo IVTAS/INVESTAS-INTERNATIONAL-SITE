@@ -9,68 +9,48 @@
         margin: 0;
         font-family: Arial, sans-serif;
         background-color: #f4f4f9;
-        color: black;
+        color: #000; /* Texte noir */
         line-height: 1.6;
       }
 
       h1 {
-        color: #064d2e; /* vert foncé */
-        font-size: 32px;
+        color: #064d2e; /* Vert foncé pour le grand titre */
         text-align: center;
         margin-bottom: 20px;
+        font-size: 32px;
       }
 
       h2 {
-        color: #0000ff; /* bleu standard */
+        color: #0000ff; /* Bleu standard pour les sous-titres */
         font-size: 24px;
-        margin-top: 25px;
-        margin-bottom: 10px;
-      }
-
-      h3 {
-        color: #0000ff;
-        font-size: 20px;
         margin-top: 20px;
-        margin-bottom: 8px;
-      }
-
-      p {
-        margin: 5px 0 15px 0;
       }
 
       hr {
         border: 0;
-        height: 1px;
-        background-color: red; /* ligne rouge fine */
-        margin: 20px 0;
+        border-top: 1px solid red; /* Ligne rouge fine */
+        margin: 15px 0;
       }
 
-      .container {
-        width: 90%;
-        max-width: 1000px;
-        margin: 20px auto;
-        background: white;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      .section {
+        margin-bottom: 20px;
       }
 
-      .download-button {
+      a.download-btn {
         display: inline-block;
         padding: 10px 20px;
-        margin: 20px 0;
-        background-color: #064d2e;
+        background: #064d2e;
         color: white;
         text-decoration: none;
         border-radius: 5px;
         font-weight: bold;
-        transition: background 0.3s ease;
       }
 
-      .download-button:hover {
-        background-color: #046633;
+      a.download-btn:hover {
+        background: #046635;
       }
 
+      /* Responsive */
       @media (max-width: 768px) {
         h1 {
           font-size: 28px;
@@ -78,11 +58,8 @@
         h2 {
           font-size: 20px;
         }
-        h3 {
-          font-size: 18px;
-        }
-        .container {
-          padding: 15px;
+        a.download-btn {
+          padding: 8px 16px;
         }
       }
 
@@ -93,103 +70,115 @@
         h2 {
           font-size: 18px;
         }
-        h3 {
-          font-size: 16px;
+        a.download-btn {
+          padding: 6px 12px;
+          font-size: 14px;
         }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>WHITE PAPER</h1>
+    <h1>WHITE PAPER</h1>
 
+    <!-- Bouton PDF centré en haut -->
+    <div style="text-align: center; margin-bottom: 20px">
+      <a href="investas-whitepaper.pdf" download class="download-btn"
+        >Télécharger le White Paper</a
+      >
+    </div>
+
+    <div class="section">
       <h2>Informations générales</h2>
       <p><strong>Nom :</strong> INVESTAS INTERNATIONAL</p>
       <p>
         <strong>Dénomination :</strong> International Investment Association
       </p>
       <p><strong>Référence :</strong> INVESTAS-BEP-20</p>
-      <p><strong>Sigle :</strong> I.VT.A.S.</p>
+      <p><strong>Sigle :</strong> I.V.T.A.S.</p>
       <p><strong>Blockchain :</strong> BINANCE</p>
       <p>
-        <strong>Spécificité Token :</strong> Crypto-monnaie commerciale et
-        monétisable, utilisable au quotidien dans l’économie réelle
+        <strong>Spécificité Token :</strong> Crypto-monnaie Commerciale et
+        Monétisable, utilisable au quotidien dans l’économie réelle
       </p>
       <p><strong>Email :</strong> egied2024@gmail.com</p>
       <p>
         <strong>Website :</strong>
         https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/
       </p>
-
       <hr />
+    </div>
 
+    <div class="section">
       <h2>Objectifs</h2>
-      <p>INVESTAS International a été créé pour :</p>
+      <p>INVESTAS International a été créée pour :</p>
       <ul>
         <li>Développement de l’Agriculture</li>
         <li>Commercialisation des Produits Agricoles</li>
         <li>Transformation et Conservation des Produits Agricoles</li>
-        <li>Formation et encadrement technique</li>
+        <li>Formation et encadrement Technique</li>
       </ul>
       <p>
-        L’objectif est de créer un écosystème financier favorable aux échanges
-        économiques et au développement des activités agricoles grâce aux levées
-        de fonds générées par la crypto-monnaie INVESTAS International.
+        Nous avons pour but de créer un écosystème financier favorable aux
+        échanges économiques et au développement des activités agricoles, de
+        ventes, de transformations et de conservations de produits vivriers
+        grâce aux levées de fonds générées par la crypto-monnaie INVESTAS
+        International pour les producteurs et les populations.
       </p>
-
       <hr />
+    </div>
 
+    <div class="section">
       <h2>Développement des régions</h2>
       <ul>
         <li>
-          Mise en place d’une agriculture biologique respectant l’environnement
+          Mise en place d’une Agriculture biologique respectant l’environnement
           et l’humain
         </li>
-        <li>Protection de l’environnement (faune et flore)</li>
+        <li>Protection de l’environnement (Faune et Flore)</li>
+        <li>Production de Denrées Alimentaires saines</li>
+        <li>Sécurisation du Foncier</li>
         <li>
-          Production de denrées alimentaires saines pour les consommateurs
-        </li>
-        <li>Sécurisation du foncier</li>
-        <li>
-          Financement et réalisation des projets diversifiés grâce aux
-          plus-values financières
+          Financement et réalisation de projets diversifiés grâce aux
+          plus-values générées par INVESTAS
         </li>
         <li>Lutte contre l’exode rural et l’immigration clandestine</li>
       </ul>
-
       <hr />
+    </div>
 
+    <div class="section">
       <h2>Vision & Mission</h2>
       <p>
         Réduction de la misère dans le monde et permettre à chaque personne de
         bâtir sa propre fortune financière en toute liberté grâce aux
-        plus-values générées par la crypto-monnaie INVESTAS INTERNATIONAL.
+        plus-values financières générées par INVESTAS INTERNATIONAL.
       </p>
       <p>
-        <strong>Zones d’activités :</strong> INVESTAS International s’implante
-        dans chaque pays et travaille en partenariat avec des entreprises
-        légalement établies.
+        Zones d’activités : INVESTAS International s’implante dans chaque pays
+        et s’implique pour le développement selon les réalités et besoins des
+        populations. Organisation internationale travaillant en partenariat avec
+        des entreprises locales.
       </p>
       <p>
-        <strong>Politique :</strong> Lutte contre la vie chère par la mise en
-        place de kits alimentaires et techniques à prix réduits ainsi que
-        l’accès aux financements de projets diversifiés.
+        Politique : lutte contre la vie chère par la mise en place de Kits
+        Alimentaires et Techniques à prix réduits et accès aux financements de
+        projets diversifiés.
       </p>
       <p>
-        <strong>Appel :</strong> Bâtissons ensemble dès aujourd’hui un avenir
-        financier durable, prospère et plus équitable grâce à INVESTAS
-        International.
+        Appel : bâtissons ensemble un avenir financier durable et équitable
+        grâce à l’impact de INVESTAS International.
       </p>
-
       <hr />
+    </div>
 
-      <h2>Déploiement de INVESTAS International</h2>
-      <h3>Étape 1 : Phase de préventes</h3>
+    <div class="section">
+      <h2>Déploiement de INVESTAS INTERNATIONAL</h2>
+      <h3>Phase 1 : Préventes</h3>
       <ul>
-        <li>Formation des leaders INVESTAS International</li>
+        <li>Formations des Leaders INVESTAS International</li>
         <li>Partenariats avec actionnaires et investisseurs</li>
-        <li>Déploiement des leaders dans chaque pays et région</li>
-        <li>Distribution de la crypto-monnaie INVESTAS aux membres</li>
+        <li>Déploiement des Leaders dans chaque pays et région</li>
+        <li>Distribution de la Crypto-monnaie INVESTAS aux membres</li>
         <li>Mise en place de la plateforme locale INVESTAS CASH TRADING</li>
         <li>
           Démarrage des formations administratives, techniques et financières
@@ -198,41 +187,38 @@
           Mise en place des communautés actives INVESTAS dans chaque région
         </li>
       </ul>
-
-      <h3>Étape 2 : Phase de capitalisation boursière</h3>
+      <h3>Phase 2 : Capitalisation boursière</h3>
       <ul>
         <li>Levées de fonds</li>
-        <li>Mise en place du pool de solvabilité (In/Out)</li>
-        <li>Mise en place des kits alimentaires et techniques</li>
+        <li>Mise en place du Pool de Solvabilité (In / Out)</li>
+        <li>Kits Alimentaires et Techniques</li>
         <li>Projets pilotes internes dans les régions</li>
-        <li>Mini-markets et restaurants de proximité</li>
-        <li>Formations et encadrements des producteurs</li>
+        <li>Mini-Markets et restaurants de proximité</li>
+        <li>Formation et encadrement des producteurs (coopératives)</li>
         <li>Mise en place des marchands de proximité INVESTAS</li>
       </ul>
-
-      <h3>Étape 3 : Phase économique</h3>
+      <h3>Phase 3 : Phase économique</h3>
       <ul>
-        <li>Mise en place de cartes d’assurances</li>
-        <li>Ventes des kits alimentaires à grande échelle</li>
-        <li>Distribution de cartes Visa aux membres actifs</li>
+        <li>Mise en place de cartes d’assurance</li>
+        <li>Vente des Kits Alimentaires à grande échelle</li>
+        <li>Distribution de cartes visas aux membres actifs</li>
         <li>Monétisation des pièces INVESTAS en argent cash</li>
         <li>Démarrage officiel des transactions en crypto-monnaies</li>
         <li>
           Mise en place d’une banque en ligne pour le développement agricole
         </li>
         <li>
-          Mise en place d’une application de recharge pièces INVESTAS en cash
-          funds
+          Mise en place d’une application de recharge pièces INVESTAS en Cash
+          Funds
         </li>
         <li>
-          Partenariats avec centres éducatifs, centres de santé, grande
-          distribution, fournisseurs, ONG…
+          Partenariats avec centres éducatifs, santé, distribution,
+          fournisseurs, ONG…
         </li>
       </ul>
-
-      <h3>Étape 4 : Phase de financement</h3>
+      <h3>Phase 4 : Financement</h3>
       <ul>
-        <li>Mise en place de centrales d’achats/ventes</li>
+        <li>Mise en place de centrales d’achats / ventes</li>
         <li>
           Financement des projets agricoles et techniques dans les régions
         </li>
@@ -241,46 +227,42 @@
           Mise en place d’unités de production, transformation et conservation
         </li>
       </ul>
-
-      <h3>Étape 5 : Phase de sécurisation</h3>
+      <h3>Phase 5 : Sécurisation</h3>
       <ul>
-        <li>
-          Sécurisation du foncier rural et urbain par la technologie blockchain
-        </li>
-        <li>
-          Sécurisation des actes administratifs par la technologie blockchain
-        </li>
+        <li>Sécurisation du foncier rural et urbain par la blockchain</li>
+        <li>Sécurisation des actes administratifs par la blockchain</li>
       </ul>
-
       <hr />
+    </div>
 
+    <div class="section">
       <h2>Tokenomics</h2>
       <p>
-        <strong>Valeur du token au lancement :</strong> 1 IVTAS = 0.1 EUR =
+        <strong>Valeur du Token au lancement :</strong> 1 IVTAS = 0.1 EUR =
         65,5957 FCFA
       </p>
-      <p><strong>Approvisionnement maximum :</strong> 1 000 000 000 IVTAS</p>
+      <p>
+        <strong>Approvisionnement maximum total :</strong> 1 000 000 000 IVTAS
+      </p>
       <ul>
-        <li>Part à vendre aux investisseurs : 500 000 000 (50%)</li>
-        <li>Parts des fondateurs : 300 000 000 (30%)</li>
+        <li>Part à vendre aux investisseurs : max 50% = 500 000 000</li>
+        <li>Parts des fondateurs : max 30% = 300 000 000</li>
         <li>
-          Parts des investisseurs initiaux en prévente : 20 000 000 – 50 000 000
-          (2-5%)
-        </li>
-        <li>Primes, R&D, marketing : 10 000 000 – 30 000 000 (1-3%)</li>
-        <li>
-          Réserve spéciale pour éventualités : 120 000 000 – 170 000 000
-          (12-17%)
+          Parts des investisseurs initiaux en prévente : max 5% = 50 000 000 /
+          min 2% = 20 000 000
         </li>
         <li>
-          Bonus spécial prévente : 50% de bonus pour les 50 000 000 tokens = 25
-          000 000 tokens prélevables dans la réserve spéciale
+          Primes, R&D, Marketing : max 3% = 30 000 000 / min 1% = 10 000 000
+        </li>
+        <li>
+          Réserve spéciale pour éventualités : max 17% = 170 000 000 / min 12% =
+          120 000 000
+        </li>
+        <li>
+          Paiement en BNB-BSC, bonus spécial prévente : 50% de bonus pour 50 000
+          000 tokens = 25 000 000 prélévables dans la réserve spéciale
         </li>
       </ul>
-
-      <a class="download-button" href="Investas-WhitePaper.pdf" download
-        >Télécharger le PDF</a
-      >
     </div>
   </body>
 </html>
