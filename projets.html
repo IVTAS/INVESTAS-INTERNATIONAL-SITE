@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INVESTAS - PROJETS</title>
+    <title>INVESTAS INTERNATIONAL - Projets</title>
+    <meta
+      name="description"
+      content="Découvrez les projets réalisés et à venir par INVESTAS International, les événements, partenariats et comment créer un compte INVESTAS pour gérer vos fonds en cryptomonnaie."
+    />
+    <meta
+      name="keywords"
+      content="INVESTAS, projets, cryptomonnaie, événements, partenariats, création compte, BNB, IVTAS, blockchain"
+    />
     <style>
       body {
         margin: 0;
@@ -119,7 +127,7 @@
       <div class="accordion-content">
         <p>
           Le financement et la réalisation des projets sont essentiellement
-          prévus à la phase économique. Néanmoins nous avons reçu plusieurs
+          prévus à la phase économique. Néanmoins, nous avons reçu plusieurs
           projets pour demande de financement via notre plateforme dans des
           domaines diversifiés.
         </p>
@@ -240,28 +248,23 @@
       </div>
       <div class="accordion-content">
         <p>
-          Nous vous invitons à vous inscrire pour suivre nos formations
-          complètes en cryptomonnaies et gérer vos fonds en toute sécurité.
-        </p>
-        <p>
-          Une chose est de gagner de l'argent en cryptomonnaie mais une autre,
-          la plus importante, est de maîtriser l'utilisation de la cryptomonnaie
-          pour être indépendant dans la gestion de vos fonds et conserver vos
-          données confidentielles.
+          Inscrivez-vous pour suivre nos formations complètes en cryptomonnaies
+          et gérer vos fonds en toute sécurité. Maîtrisez la gestion de vos
+          transactions et la confidentialité de vos données.
         </p>
 
         <h4>Étape 1 : Ouverture du compte numérique</h4>
         <p>
-          La création d'un compte peut se faire à distance. Nous vous donnons
-          ici juste les informations primaires pour vous guider. Pour la suite,
-          veuillez nous contacter.
+          La création d'un compte peut se faire à distance. Voici les
+          informations primaires pour vous guider. Pour la suite,
+          contactez-nous.
         </p>
         <ul>
-          <li>Avoir une connexion internet fonctionnelle</li>
-          <li>Avoir un calepin ou cahier et un stylo</li>
+          <li>Connexion internet fonctionnelle</li>
+          <li>Calepin ou cahier et stylo</li>
           <li>
-            Si possible, un autre téléphone pour faire la photo du code composé
-            de 12 mots fournis par Metamask
+            Un autre téléphone pour photographier le code de 12 mots fourni par
+            Metamask
           </li>
           <li>Télécharger l'application METAMASK</li>
         </ul>
@@ -275,8 +278,7 @@
           <li>Valider le document en lisant et acceptant</li>
           <li>Entrer à nouveau le mot de passe et confirmer</li>
           <li>
-            Noter les 12 mots secrets dans l'ordre dans votre calepin ou faire
-            une capture d'écran
+            Noter les 12 mots secrets dans l'ordre ou faire une capture d'écran
           </li>
           <li>Valider et suivre les instructions pour ressaisir les 12 mots</li>
           <li>Vous arrivez dans votre portefeuille METAMASK</li>
@@ -293,21 +295,18 @@
     </div>
 
     <script>
-      const headers = document.querySelectorAll(".accordion-header");
-      headers.forEach((header) => {
-        header.addEventListener("click", () => {
+      const headers = document.querySelectorAll('.accordion-header');
+      headers.forEach(header => {
+        header.addEventListener('click', () => {
           const content = header.nextElementSibling;
-          const toggle = header.querySelector(".toggle");
+          const toggle = header.querySelector('.toggle');
           if (content.style.display === "block") {
             content.style.display = "none";
             toggle.textContent = "+";
           } else {
-            document
-              .querySelectorAll(".accordion-content")
-              .forEach((c) => (c.style.display = "none"));
-            document
-              .querySelectorAll(".toggle")
-              .forEach((t) => (t.textContent = "+"));
+            document.querySelectorAll('.accordion-content').forEach(c => c.style.display = "none");
+            document.querySelectorAll('.toggle').forEach(t => t.textContent = "+";
+            );
             content.style.display = "block";
             toggle.textContent = "−";
           }
