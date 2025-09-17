@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/accueil.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/savoir.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/avantages.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/nouveau.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/services.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/infos.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/projets.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/contact.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ivtas.github.io/INVESTAS-INTERNATIONAL-SITE/whitepaper.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
